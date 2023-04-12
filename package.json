@@ -1,13 +1,10 @@
 {
   "license": "MIT",
-
   "scripts": {
-      "scraping": "node js/scraping.js",
-      "download": "python python/download.py"
+    "scraping": "node js/scraping.js",
+    "download": "python python/download.py"
   },
-
   "dependencies": {
-    "html-table-to-json": "^1.0.0",
     "puppeteer": "^19.2.2"
   }
 }
