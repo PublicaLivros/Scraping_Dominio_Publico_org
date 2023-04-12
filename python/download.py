@@ -1,9 +1,10 @@
+import pathlib
 import requests
 import json
 import os
 from modules.booksparser import *
-
-with open("../json/raw_data.json", encoding="utf8") as dataRaw:
+mypath = pathlib.Path("json/raw_data.json").resolve(True)
+with open(mypath, encoding="utf8") as dataRaw:
     data = json.load(dataRaw)
 
 def verifyDirsExist():
